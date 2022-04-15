@@ -1,6 +1,7 @@
 {
   "files": [
     "ts/start.ts",
-    "ts/enum.ts"
+    "ts/enum.ts",
+    "ts/interface.ts"
   ]
 }
