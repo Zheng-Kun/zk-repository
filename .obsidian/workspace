@@ -1,0 +1,92 @@
+{
+  "main": {
+    "id": "ef67d28c43272c64",
+    "type": "split",
+    "children": [
+      {
+        "id": "e25ec6b10d1fb507",
+        "type": "leaf",
+        "state": {
+          "type": "graph",
+          "state": {}
+        }
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "dba5f89ca5533439",
+    "type": "split",
+    "children": [
+      {
+        "id": "c419b16d256511f9",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "47958cf87d6ac3b9",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {}
+            }
+          },
+          {
+            "id": "629c3a4dcba1f841",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "608f7263bcda5ea7",
+    "type": "split",
+    "children": [
+      {
+        "id": "590948568efa2f1e",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "7e145bb31b52e678",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "active": "e25ec6b10d1fb507",
+  "lastOpenFiles": [
+    "font-end/CSS/FormattingCcontext.md",
+    "font-end/CSS/CSS的一些技巧.md",
+    "font-end/CSS/多行文本溢出省略.md",
+    "多媒体/流媒体协议.md"
+  ]
+}
