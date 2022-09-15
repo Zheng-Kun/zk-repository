@@ -47,6 +47,18 @@ centOS：
 
 `sh`是`bash`的一种特殊的模式， `sh` 就是开启了**POSIX**标准的`bash`
 
+以下两种写法等同
+
+```shell
+/bin/sh
+```
+
+```shell
+/bin/bash --posix
+```
+
+
+
 ## 运行脚本
 1. 作为可执行程序运行
 ```bash

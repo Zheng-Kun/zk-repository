@@ -37,13 +37,13 @@ gitbook inti [要初始化的目录（gitbook的输出目录）]
 
 但是，在这一步我们并没有那么顺利，你八成会看到这个东西：
 
-![image-20220418105155000](./images/gitbook init error.png)
+![image-20220418105155000](./images/gitbook-init-error.png)
 
 不慌，这是因为我们node版本的问题，还记得之前的伏笔吗，这玩意已经五年没有更新了，我们需要安装老一点的node版本。
 
 这里我使用`nvm`来切换到12试试：
 
-![image-20220418105756080](./images/change node version.png)
+![image-20220418105756080](./images/change-node-version.png)
 
 搞定！
 
@@ -61,11 +61,11 @@ npm i gitbook-summary -g
 book sm
 ```
 
-![image-20220418140730056](./images/生成sm shell.png)
+![image-20220418140730056](./images/生成sm-shell.png)
 
 这时候`SUMMARY.md`中已经有了我们需要的目录信息：
 
-![image-20220418140932218](./images/bo0k summary.png)
+![image-20220418140932218](./images/book-summary.png)
 
 #### 2.2 编译生成静态网页
 
@@ -73,7 +73,7 @@ book sm
 gitbook build
 ```
 
-![image-20220418141112965](./images/gitbook build.png)
+![image-20220418141112965](./images/gitbook-build.png)
 
 这时基于目录和文档的网站就生成好了，目录下会多出一个`_book`文件夹，我们的网站就在这个目录下：
 
@@ -85,13 +85,13 @@ gitbook build
 gitbook serve
 ```
 
-![image-20220418141840404](./images/book serve.png)
+![image-20220418141840404](./images/book-serve.png)
 
 这时候我们访问 http://localhost:4000/ 就可以预览我们的gitbook啦，大功告成！
 
 
 
-![image-20220418142140179](./images/book preview.png)
+![image-20220418142140179](./images/book-preview.png)
 
 
 

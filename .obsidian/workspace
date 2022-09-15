@@ -4,11 +4,15 @@
     "type": "split",
     "children": [
       {
-        "id": "e25ec6b10d1fb507",
+        "id": "c1e1a551d2e6be51",
         "type": "leaf",
         "state": {
-          "type": "graph",
-          "state": {}
+          "type": "markdown",
+          "state": {
+            "file": "font-end/browser/浏览器如何工作.md",
+            "mode": "source",
+            "source": false
+          }
         }
       }
     ],
@@ -65,6 +69,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "font-end/browser/浏览器如何工作.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -74,19 +79,62 @@
                 "unlinkedCollapsed": true
               }
             }
+          },
+          {
+            "id": "9c67da60311ffa33",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "font-end/browser/浏览器如何工作.md"
+              }
+            }
+          },
+          {
+            "id": "677d337acb2f6b95",
+            "type": "leaf",
+            "state": {
+              "type": "calendar",
+              "state": {}
+            }
+          },
+          {
+            "id": "c1eb508e70af2928",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true
+              }
+            }
+          },
+          {
+            "id": "3bf6ce61cded1885",
+            "type": "leaf",
+            "state": {
+              "type": "advanced-tables-toolbar",
+              "state": {}
+            }
           }
-        ]
+        ],
+        "currentTab": 4
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 300
   },
-  "active": "e25ec6b10d1fb507",
+  "active": "c1e1a551d2e6be51",
   "lastOpenFiles": [
-    "font-end/CSS/FormattingCcontext.md",
+    "翻译.md",
+    "font-end/browser/浏览器如何工作.md",
     "font-end/CSS/CSS的一些技巧.md",
-    "font-end/CSS/多行文本溢出省略.md",
-    "多媒体/流媒体协议.md"
+    "font-end/CSS/给锚伪类设置样式.md",
+    "font-end/CSS/FormattingContext.md",
+    "font-end/CSS/point-event.md",
+    "git/AngularJS Git Commit Message 约定.md",
+    "zigbee2mqtt/踩坑.md",
+    "。/README.md",
+    "tools/git-book使用.md"
   ]
 }

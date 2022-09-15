@@ -1,1 +1,9 @@
-{}
+{
+  "newLinkFormat": "relative",
+  "tabSize": 2,
+  "useTab": false,
+  "useMarkdownLinks": true,
+  "attachmentFolderPath": "./images",
+  "readableLineLength": false,
+  "strictLineBreaks": false
+}
