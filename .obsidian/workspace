@@ -11,7 +11,7 @@
           "state": {
             "file": "font-end/browser/浏览器如何工作.md",
             "mode": "source",
-            "source": false
+            "source": true
           }
         }
       }
@@ -118,7 +118,7 @@
             }
           }
         ],
-        "currentTab": 4
+        "currentTab": 3
       }
     ],
     "direction": "horizontal",
@@ -126,8 +126,8 @@
   },
   "active": "c1e1a551d2e6be51",
   "lastOpenFiles": [
-    "翻译.md",
     "font-end/browser/浏览器如何工作.md",
+    "翻译.md",
     "font-end/CSS/CSS的一些技巧.md",
     "font-end/CSS/给锚伪类设置样式.md",
     "font-end/CSS/FormattingContext.md",
