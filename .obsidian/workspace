@@ -9,8 +9,8 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "font-end/package manager/npm.md",
-            "mode": "preview",
+            "file": "font-end/project/前端工程.md",
+            "mode": "source",
             "source": true
           }
         }
@@ -69,7 +69,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "font-end/package manager/npm.md",
+                "file": "font-end/project/前端工程.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -86,7 +86,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "font-end/package manager/npm.md"
+                "file": "font-end/project/前端工程.md"
               }
             }
           },
@@ -126,15 +126,15 @@
   },
   "active": "c1e1a551d2e6be51",
   "lastOpenFiles": [
+    "font-end/project/images/Pasted image 20220921114259.png",
+    "font-end/project/images/Pasted image 20220921114208.png",
+    "font-end/project/images/Pasted image 20220921113501.png",
+    "font-end/project/images/Pasted image 20220921112647.png",
+    "font-end/project/images/Pasted image 20220921113446.png",
     "font-end/project/前端工程.md",
+    "font-end/package manager/npm.md",
     "font-end/browser/浏览器如何工作.md",
     "翻译.md",
-    "font-end/CSS/CSS的一些技巧.md",
-    "font-end/CSS/给锚伪类设置样式.md",
-    "font-end/CSS/FormattingContext.md",
-    "font-end/CSS/point-event.md",
-    "git/AngularJS Git Commit Message 约定.md",
-    "zigbee2mqtt/踩坑.md",
-    "。/README.md"
+    "font-end/CSS/CSS的一些技巧.md"
   ]
 }

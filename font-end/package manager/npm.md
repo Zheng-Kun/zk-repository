@@ -40,8 +40,6 @@ npm install -g nrm
 nrm ls
 ```
 
-<img src="../../../../Library/Application Support/typora-user-images/image-20220712104709343.png" alt="image-20220712104709343" style="zoom:50%;" />
-
 - 切换源
 
 ```shell
