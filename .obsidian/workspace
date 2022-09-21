@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "font-end/project/前端工程.md",
+            "file": "font-end/package manager/npm.md",
             "mode": "preview",
             "source": true
           }
@@ -69,7 +69,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "font-end/project/前端工程.md",
+                "file": "font-end/package manager/npm.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -86,7 +86,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "font-end/project/前端工程.md"
+                "file": "font-end/package manager/npm.md"
               }
             }
           },
@@ -126,6 +126,7 @@
   },
   "active": "c1e1a551d2e6be51",
   "lastOpenFiles": [
+    "font-end/project/前端工程.md",
     "font-end/browser/浏览器如何工作.md",
     "翻译.md",
     "font-end/CSS/CSS的一些技巧.md",
@@ -134,7 +135,6 @@
     "font-end/CSS/point-event.md",
     "git/AngularJS Git Commit Message 约定.md",
     "zigbee2mqtt/踩坑.md",
-    "。/README.md",
-    "tools/git-book使用.md"
+    "。/README.md"
   ]
 }
