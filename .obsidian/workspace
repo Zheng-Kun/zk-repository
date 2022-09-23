@@ -10,7 +10,7 @@
           "type": "markdown",
           "state": {
             "file": "font-end/project/前端工程.md",
-            "mode": "source",
+            "mode": "preview",
             "source": true
           }
         }
@@ -126,14 +126,14 @@
   },
   "active": "c1e1a551d2e6be51",
   "lastOpenFiles": [
+    "font-end/browser/浏览器如何工作.md",
+    "font-end/project/前端工程.md",
     "font-end/project/images/Pasted image 20220921114259.png",
     "font-end/project/images/Pasted image 20220921114208.png",
     "font-end/project/images/Pasted image 20220921113501.png",
     "font-end/project/images/Pasted image 20220921112647.png",
     "font-end/project/images/Pasted image 20220921113446.png",
-    "font-end/project/前端工程.md",
     "font-end/package manager/npm.md",
-    "font-end/browser/浏览器如何工作.md",
     "翻译.md",
     "font-end/CSS/CSS的一些技巧.md"
   ]
