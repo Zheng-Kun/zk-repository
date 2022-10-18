@@ -6,5 +6,5 @@
   "attachmentFolderPath": "./images",
   "readableLineLength": false,
   "strictLineBreaks": true,
-  "livePreview": false
+  "livePreview": true
 }

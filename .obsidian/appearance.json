@@ -2,6 +2,6 @@
   "theme": "moonstone",
   "cssTheme": "Minimal",
   "baseFontSize": 30,
-  "translucency": false,
+  "translucency": true,
   "accentColor": ""
 }
