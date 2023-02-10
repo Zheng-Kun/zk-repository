@@ -4,7 +4,7 @@
 | /bin         | binary 缩写，存放二进制可执行文件，存放ls，cat                                                      |     |     |
 | /boot        | 存放启动LINUX使用的一些核心文件                                                                     |     |     |
 | /dev         | device 缩写。存放linux的外部设备                                                                    |     |     |
-| /etc         | etcetera(等等，附加物) 缩写。存放系统管理所需要的配置文件和子目录                                   |     |     |
+| /etc         | etcetera(等等，附加物) 缩写。存放系统管理所需要的配置文件和子目录（如docker的配置文件存放在/etc/docker/daemon.json）                                   |     |     |
 | /etc/profile | 环境变量配置文件，`echo $varxx`ch查看                                                               |     |     |
 | /etc/bashrc  | 别名，全局生效                                                                                      |     |     |
 | /home        | 用户的主目录                                                                                        |     |     |
@@ -37,3 +37,5 @@
 
 rc，run command的缩写，运行命令脚本文件的后缀。这些脚本通常在程序的启动阶段被调用。许多程序在启动时，都需要rc后缀的初始文件或配置文件。
 more命令类似cat，以页的形式显示，空格键翻页，b前一页。
+
+ce Community Edition 社区版 如 docker-ce gitlab-ce
