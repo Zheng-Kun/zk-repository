@@ -36,6 +36,7 @@
 
 
 rc，run command的缩写，运行命令脚本文件的后缀。这些脚本通常在程序的启动阶段被调用。许多程序在启动时，都需要rc后缀的初始文件或配置文件。
+
 more命令类似cat，以页的形式显示，空格键翻页，b前一页。
 
 ce Community Edition 社区版 如 docker-ce gitlab-ce
