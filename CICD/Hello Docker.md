@@ -137,6 +137,11 @@ COPY testfile.txt c:\
 RUN dir c:\
 ```
 
+### 环境变量替换
+
+环境变量（通过`ENV`语句声明）也可以在某些指令中用作`Dokcerfile`要解释的变量。
+
+环境变量在`Dockerfile`中通过`$variable_name`或`${variable_name}`表示。这两种方式是等效的，大括号通常用于解决变量名没有空格的问题。`${variable_name}`语法还支持下面指定的一些标准 bash 修饰符.
 
 
 
