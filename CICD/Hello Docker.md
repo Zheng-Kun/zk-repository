@@ -107,6 +107,36 @@ FROM ImageName
 # escape=` (backteck)`
 ```
 escape用与设定用于Docker中的转义字符。如果没有制定，则默认转义字符为`\`
+转义字符既用于转义字符，也用于转义换行符，这允许Dokerfile指令跨行。换行符除了出现在行末, 不会在`RUN`命令中被执行。
+将转义字符设置为`` ` ``再`Windows`中非常有用，在`Windows`中`\` 为路径分隔符。
+
+以下示例在`Windows`上会以不明显的方式失败。第二行行末的第二个`\`将被解释为换行符的转义，而不是第一个`\`的转义目标，类似地，假设第三行末尾的`\`实际上是作为指令处理的，则会导致它被视为一个行的延续。这个dockerfile的结果是，将第二行和第三行视为以一条指令。`COPY testfile.txt c:\RUN dir c:`
+```dockerfile
+FROMLearn more about the "FROM" Dockerfile command. microsoft/nanoserver
+COPY testfile.txt c:\\
+RUN dir c:\
+```
+结果：
+```
+PS E:\myproject> docker build -t cmd .
+
+Sending build context to Docker daemon 3.072 kB
+Step 1/2 : FROM microsoft/nanoserver
+ ---> 22738ff49c6d
+Step 2/2 : COPY testfile.txt c:\RUN dir c:
+GetFileAttributesEx c:RUN: The system cannot find the file specified.
+PS E:\myproject>
+```
+
+通过`escap`解析器指令，下面的`Dockerfile`可以在`Windows`上成功按照预期的方式使用自然平台语义：
+```dockfile
+# escape=`
+
+FROM microsoft/nanoserver
+COPY testfile.txt c:\
+RUN dir c:\
+```
+
 
 
 
