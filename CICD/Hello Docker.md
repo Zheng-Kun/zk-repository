@@ -31,6 +31,8 @@ Docker将程序与程序的依赖打包在一个文件里，运行这个文件�
 3. 组建为服务架构
 
 ## Dockerfile https://docs.docker.com/engine/reference/builder/
+Docker可以通过从`Dockerfile`读取指令来自动构建镜像。`Dockerfile`是一个组装镜像的文本文档，其中包含了用户可以在命令行上调用的所有命令。
+
 ### 格式：
 ```dockerfile
 # Comment
@@ -94,11 +96,11 @@ FROM ImageName
 - `syntax`
 - `escape`
 
-### `syntax`
+#### `syntax`
 
 此功能仅在使用BuildKit后端是可用，在使用经典构建器后端是会被忽略。更多详情请查看[自定义Docker语法](https://docs.docker.com/build/buildkit/dockerfile-frontend/)
 
-### escape
+#### escape
 ```dockerfile
 # escape=\ (blackslash)
 ```
@@ -142,8 +144,44 @@ RUN dir c:\
 环境变量（通过`ENV`语句声明）也可以在某些指令中用作`Dokcerfile`要解释的变量。
 
 环境变量在`Dockerfile`中通过`$variable_name`或`${variable_name}`表示。这两种方式是等效的，大括号通常用于解决变量名没有空格的问题。`${variable_name}`语法还支持下面指定的一些标准 bash 修饰符.
+- `${variable:-word}` 表示，如果`variable`如果设置了值，那它的值就是设置的值，如果没有设置值，它的值就是`word`。
+- `${variable:+word}`表示，如果`variable`如果设置了值它的值就是`word`，如果没有设置，它的值就是空字符串。
+在所有情况下，`word`可以是任何字符串，包括附加的环境变量。
+
+可以在变量之前添加`\`来转义：例如`\$foo`或者`\${foo}`将会被转义成`$foo`与`${foo}`文本。
+
+示例：（# 后表示解析之后的值）
+```dockerfile
+FROM busybox
+ENV FOO=/bar
+WORKDIR ${FOO}     # WORKDIR /bar
+ADD . $FOO         # ADD . /bar
+COPY \$FOO /quux   # COPY $FOO /quux
+```
+
+在`Dockerfile`中，以下指令支持环境变量
+- `ADD`
+- `COPY`
+- `ENV`
+- `EXPOSE`
+- `FORM`
+- `LABEL`
+- `STOPSIGNAL`
+- `USER`
+- `VOLUME`
+- `WORKDIR`
+- `ONBUILD`(与上面的指令其中的一个结合使用时)
+
+在整个指令中，环境变量替换对每个变量使用相同的值。例如：
+```dockerfile
+ENV abc=hello
+ENV abc=bye def=$abc
+ENV ghi=$abc
+```
+在上面的例子中，`def`的值为`hello`而不是`bye`,但是`ghi`的值为`bye`，因为它不是将`abc`设置为`bye`这条指令的一部分。
 
 
+### `.dockerignore` 文件
 
 
 
