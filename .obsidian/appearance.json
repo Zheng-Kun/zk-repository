@@ -1,7 +1,8 @@
 {
-  "theme": "obsidian",
-  "cssTheme": "Obsidian Nord",
+  "theme": "moonstone",
+  "cssTheme": "",
   "baseFontSize": 19,
   "translucency": true,
-  "accentColor": ""
+  "accentColor": "",
+  "nativeMenus": false
 }
