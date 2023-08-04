@@ -16,13 +16,21 @@ tsc [filename] -w
  #### 1. `include`
   用来指定需要编译的ts文件目录
   - 注： `**` 表示任意目录 `*` 表示任意文件
+  - `*` 匹配0或多个字符（不包括目录分隔符）
+  - `?` 匹配一个任意字符（不包括目录分隔符）
+  - `**/` 递归匹配任意子目录
  #### 2. `exclude`
-  用来指定被排除(不需要呗编译的)的文件目录
+  用来指定被排除(不需要被编译的)的文件目录
   - 注： 默认值`["node_modules", "bower_components", "jspm_packages"]`
  #### 3. `extends`
-  指定被继承的配置文件
+  指定要继承的配置文件，相对路径在解析是相对于它所在的文件
+  循环引用会报错
  #### 4. `files`
   指定要编译的文件目录（比较少用）
+ #### 4. `references`
+   对象数组，指定要引用的工程
+   每个`path` 的属性都可以指向包含 `tsconfig.json` 文件的目录，或者直接指向配置文件本身
+   - 导入工程中的模块其实是夹在它输出的声明文件 `.d.ts`
  #### 5. `compilerOptions`
   指定编译器的选项
   - `target`
@@ -55,6 +63,11 @@ tsc [filename] -w
     严格地检查null值
   - `strict`
     所有严格检查的总开关
+  -  `@types`, `typeRoots`, `types`
+     默认所有可见的 `@types` 包会在编译时包含进来（包含`node_moudles/@types` 文件夹及其子文件夹下的所有包）
+     如果指定了 `typeRoots`，只有 `typeRoots` 下的包才会包含进来
+     如果指定了 `types`，只有`types`指定的包被包含进来
+     `"types": []` 表示禁用自动引入 `@types` 包
 ```json
 {
   "include": ["src/**/*"],
@@ -76,6 +89,8 @@ tsc [filename] -w
     "noEmit": false,
     "noEmitOnError": true,
     "alwaysStrict": false,
+    "types": ["node", "lodash", "express"], // 编译时只包含指定的三个包
+    "typesRoot": ["./typings"], // 只有 ./typing 下的包会包含进来
   }
 }
 ```

@@ -1,6 +1,6 @@
 {
   "newLinkFormat": "relative",
-  "tabSize": 4,
+  "tabSize": 3,
   "useTab": false,
   "useMarkdownLinks": true,
   "attachmentFolderPath": "./images",
