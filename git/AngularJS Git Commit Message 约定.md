@@ -104,7 +104,7 @@ header是包含更改简述的一行内容，期中包括 **type**，可选的**
 - **fix** (bug fix)
 - **docs** (documentation)
 - **style**(formatting,miss semi colons,…) // 格式修改，不影响逻辑的变动
-- **refactor**
+- **refactor** 重构
 - **test**(添加测试)
 - **chore**(构建工具辅助工具的变动)
 
