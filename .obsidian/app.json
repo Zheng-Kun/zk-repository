@@ -9,5 +9,12 @@
   "livePreview": true,
   "alwaysUpdateLinks": true,
   "showLineNumber": true,
-  "vimMode": false
+  "vimMode": false,
+  "pdfExportSettings": {
+    "includeName": true,
+    "pageSize": "A4",
+    "landscape": false,
+    "margin": "0",
+    "downscalePercent": 100
+  }
 }
