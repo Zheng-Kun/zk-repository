@@ -1,10 +1,11 @@
 {
   "theme": "moonstone",
   "cssTheme": "Blue Topaz",
-  "baseFontSize": 14,
+  "baseFontSize": 20,
   "translucency": true,
   "accentColor": "",
   "nativeMenus": false,
   "textFontFamily": "",
-  "monospaceFontFamily": "Space Mono for Powerline"
+  "monospaceFontFamily": "Space Mono for Powerline",
+  "baseFontSizeAction": true
 }
