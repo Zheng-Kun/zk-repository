@@ -166,10 +166,10 @@ from: [npm install fails on Windows 10: ENOENT 4058 operation not permitted, ren
 
 1. 删除package-lock.json, node_modules and cache
     ```shell 
-      #win
-     del package-lock.json
-     rd /s /q node_modules
-     npm cache clear --force
+    #win
+   del package-lock.json
+   rd /s /q node_modules
+   npm cache clear --force
     ```
     ```shell
     #macOS
