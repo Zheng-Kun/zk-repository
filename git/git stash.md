@@ -1,0 +1,1 @@
+git stash save "message" 保存当前工作区的修改，并添加一条说明新一
