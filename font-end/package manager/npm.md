@@ -172,8 +172,8 @@ from: [npm install fails on Windows 10: ENOENT 4058 operation not permitted, ren
    npm cache clear --force
     ```
     ```shell
-    #macOS
-    rm package-lock,json
+    #mac
+    rm package-lock.json
     rem -rf node_modules/
     npm cache clear --force
     ```
