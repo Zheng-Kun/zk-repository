@@ -71,15 +71,15 @@ npm view <pkg> version # to view a package's published version
 npm ls #to inspect current package/dependency versions
 ```
 
-| 选项       | 描述                                       | 例子                     | 说明                                      |
-| ---------- | ------------------------------------------ | ------------------------ | ----------------------------------------- |
-| major      | 重大更新版本                               | `npm version major`      | 0.2.0 =》1.0.0                            |
-| minor      | 主要版本更新                               | `npm version minor`      | 0.2.0 =》0.3.0                            |
-| patch      | 补丁更新版本                               | `npm version patch`      | 0.2.0 =》0.2.1                            |
-| premajor   | 重大版本更新预发布版本                     | `npm version premajor`   | 0.2.0 =》1.0.0-0                          |
-| preminor   | 主要版本更新预发布版本                     | `npm version preminor`   | 0.2.0 =》0.3.0-0                          |
-| prepatch   | 补丁更新版本预发布版本                     | `npm version prepatch`   | 0.2.0 =》0.2.1-0                          |
-| prerelease | 预发布版本                                 | `npm version prerelease` | 当前版本不是预发布版本的会出错            |
+| 选项         | 描述                             | 例子                       | 说明                      |
+| ---------- | ------------------------------ | ------------------------ | ----------------------- |
+| major      | 重大更新版本                         | `npm version major`      | 0.2.0 =》1.0.0           |
+| minor      | 主要版本更新                         | `npm version minor`      | 0.2.0 =》0.3.0           |
+| patch      | 补丁更新版本                         | `npm version patch`      | 0.2.0 =》0.2.1           |
+| premajor   | 重大版本更新预发布版本                    | `npm version premajor`   | 0.2.0 =》1.0.0-0         |
+| preminor   | 主要版本更新预发布版本                    | `npm version preminor`   | 0.2.0 =》0.3.0-0         |
+| prepatch   | 补丁更新版本预发布版本                    | `npm version prepatch`   | 0.2.0 =》0.2.1-0         |
+| prerelease | 预发布版本                          | `npm version prerelease` | 当前版本不是预发布版本的会出错         |
 | from-git   | 拿取git的tag作为版本号设置至package.json内 | `npm version from-git`   | git的tag标签没有设置的情况下，会抛出错误 |
 
 关于prerelease的使用是存在前提。当前版本必须是预发布版本，如果不是预发布版本是会抛出错误的，使用时需要注意。使用[--preid]提供额外参数还可用于详细描述预发布版本的作用，比如需要实现下面这种情况：

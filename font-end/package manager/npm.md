@@ -121,14 +121,16 @@ npm init -y # -y 表示没有任何提问
  1. `npm version ?` 查看可以使用的命令
 
  2. `npm version [ <newversion> |major | minor | patch | premajor | prepatch | prerelease]`
-    | keyword | - |
-    | - | - |
+
+    | keyword | Description |
+    | --- | --- |
     | major | 主版本号 |
     | minor | 次版本号 |
     | patch | 补丁号 |
     | premajor | 预备主版本 | 
     | prepatch | 预备次版本 |
     | prerelsase | 预发布版本 |
+    
     **项目的git status 必须是clear 才可以使用上述命令**
     项目中如果包含git会自动提交到git (git commit -m "X.Y.Z")
     也可以使用以下命令 s%将会被替换为版本号
