@@ -1,49 +1,49 @@
 # threejs 支持的3d模型1.  
 
 1. 3DM
-1. AMF
-1. 3MF
-1. BVH
-1. Collada
-1. DDSL
-1. DRACO
-1. EXR
-1. FBX
-1. GCode
-1. GLTF
-1. IFC
-1. KMZ
-1. KTX2
-1. KTX
-1. LDraw
-1. LogLuv
-1. Lottie
-1. LUT3d
-1. LUTCube
-1. LWO
-1. MD2
-1. MDD
-1. MMD
-1. MTL
-1. NRRD
-1. OBJ
-1. PCD
-1. PDB
-1. PLY
-1. PRWM
-1. PVR
-1. RGBE
-1. RGBM
-1. STL
-1. SVG
-1. TDS
-1. TGA
-1. Tilt
-1. TTF
-1. VOX
-1. VRML
-1. VTX
-1. XYZ
+2. AMF
+3. 3MF
+4. BVH
+5. Collada
+6. DDSL
+7. DRACO
+8. EXR
+9. FBX
+10. GCode
+11. GLTF
+12. IFC
+13. KMZ
+14. KTX2
+15. KTX
+16. LDraw
+17. LogLuv
+18. Lottie
+19. LUT3d
+20. LUTCube
+21. LWO
+22. MD2
+23. MDD
+24. MMD
+25. MTL
+26. NRRD
+27. OBJ
+28. PCD
+29. PDB
+30. PLY
+31. PRWM
+32. PVR
+33. RGBE
+34. RGBM
+35. STL
+36. SVG
+37. TDS
+38. TGA
+39. Tilt
+40. TTF
+41. VOX
+42. VRML
+43. VTX
+44. XYZ
 
 
 
@@ -187,10 +187,3 @@ VTK，全称是Visualization Toolkit，即可视化工具包。是一个开源�
 
 .x文件是微软为DX开发提供的一种3D文件.包括顶点\纹理、动作。
 
-
-
-「计算机网络」https://www.aliyundrive.com/s/Uf8kqRNFayL 提取码: 48fg
-点击链接保存，或者复制本段内容，打开「阿里云盘」APP ，无需下载极速在线查看，视频原画倍速播放。
-
-「c 复试」https://www.aliyundrive.com/s/yQgYnrSdqm5 提取码: 48fg
-点击链接保存，或者复制本段内容，打开「阿里云盘」APP ，无需下载极速在线查看，视频原画倍速播放。
