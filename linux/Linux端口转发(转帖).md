@@ -14,7 +14,6 @@ SSH 提供了一个非常有意思的功能，就是端口转发，它能够将�
 ssh -fgN -L 2222:localhost:22 localhost
 ```
 
-复制
 
 （2）远程端口转发
 
@@ -22,7 +21,6 @@ ssh -fgN -L 2222:localhost:22 localhost
 ssh -fgN -R 2222:host1:22 localhost
 ```
 
-复制
 
 （3）动态转发
 
@@ -30,7 +28,6 @@ ssh -fgN -R 2222:host1:22 localhost
 ssh -fgN -D 12345 root@host1
 ```
 
-复制
 
 **2、iptables 端口转发**
 
@@ -45,7 +42,6 @@ vi /etc/sysctl.conf
 sysctl -p
 ```
 
-复制
 
 （2）将本地的端口转发到本机端口
 
@@ -53,7 +49,6 @@ sysctl -p
 iptables -t nat -A PREROUTING -p tcp --dport 2222 -j REDIRECT --to-port 22
 ```
 
-复制
 
 （3）将本机的端口转发到其他机器
 
@@ -65,7 +60,6 @@ iptables -t nat -A POSTROUTING -d 192.168.172.131 -p tcp --dport 80 -j SNAT --to
 iptables -t nat -F PREROUTING
 ```
 
-复制
 
 **03、firewall 端口转发**
 
@@ -77,7 +71,6 @@ CentOS 7.0以上使用的是firewall，通过命令行配置实现端口转发�
 firewall-cmd --permanent --add-masquerade
 ```
 
-复制
 
 （2）配置端口转发，将到达本机的12345端口的访问转发到另一台[服务器](https://cloud.tencent.com/product/cvm?from=10680)的22端口。
 
@@ -85,7 +78,6 @@ firewall-cmd --permanent --add-masquerade
 firewall-cmd --permanent --add-forward-port=port=12345:proto=tcp:toaddr=192.168.172.131:toport=22
 ```
 
-复制
 
 （3）重新载入，使其失效。
 
@@ -93,7 +85,6 @@ firewall-cmd --permanent --add-forward-port=port=12345:proto=tcp:toaddr=192.168.
 firewall-cmd --reload
 ```
 
-复制
 
 **04、rinetd 端口转发**
 
@@ -105,7 +96,6 @@ rinetd是一个轻量级TCP转发工具，简单配置就可以实现端口映�
 wget https://li.nux.ro/download/nux/misc/el7/x86_64/rinetd-0.62-9.el7.nux.x86_64.rpm
 ```
 
-复制
 
 （2）安装rinetd
 
@@ -113,16 +103,14 @@ wget https://li.nux.ro/download/nux/misc/el7/x86_64/rinetd-0.62-9.el7.nux.x86_64
 rpm -ivh rinetd-0.62-9.el7.nux.x86_64.rpm
 ```
 
-复制
 
 （3）编辑配置文件
 
 ```javascript
 vi rinetd.conf 
-    0.0.0.0 1234 127.0.0.1 22
+0.0.0.0 1234 127.0.0.1 22
 ```
 
-复制
 
 （4）启动转发
 
@@ -130,7 +118,6 @@ vi rinetd.conf
 rinetd -c /etc/rinetd.conf
 ```
 
-复制
 
 **05、ncat 端口转发**
 
@@ -142,7 +129,6 @@ netcat（简称nc）被誉为[网络安全](https://cloud.tencent.com/product/ns
 yum install nmap-ncat -y
 ```
 
-复制
 
 （2）监听本机 9876 端口，将数据转发到 192.168.172.131的 80 端口
 
@@ -150,7 +136,6 @@ yum install nmap-ncat -y
 ncat --sh-exec "ncat 192.168.172.131 80" -l 9876  --keep-open
 ```
 
-复制
 
 **06、socat 端口转发**
 
@@ -162,7 +147,6 @@ socat是一个多功能的网络工具，使用socat进行端口转发。
 yum install -y socat
 ```
 
-复制
 
 （2）在本地监听12345端口，并将请求转发至192.168.172.131的22端口。
 
@@ -182,25 +166,32 @@ Linux 版的lcx，内网端口转发工具。
 http://www.vuln.cn/wp-content/uploads/2016/06/lcx_vuln.cn_.zip
 ```
 
-复制
 
 （2）监听本地1234端口，转发给192.168.172.131的22端口
 
-```javascript
+```sh
 ./portmap -m 1 -p1 1234 -h2 192.168.172.131 -p2 22
-08、portfwd端口转发
+```
+
+
+**08、portfwd端口转发**
 portfwd是meterpreter中内置的功能，也提供了单机版，用于TCP/UDP端口转发服务
 Github 项目地址：
 https://github.com/rssnsj/portfwd
 （1）下载编译
+```sh
 git clone https://github.com/rssnsj/portfwd.git
 cd portfwd/src
 make
+```
+
 （2）将本地的12345端口转发到192.168.172.131：22
-
-
+```sh
 ./tcpfwd 0.0.0.0:12345 192.168.172.131:22
-09、NATBypass端口转发
+```
+
+
+**09、NATBypass端口转发**
 一款lcx（htran）在golang下的实现
 Gihub项目地址：
 https://github.com/cw1997/NATBypass
@@ -208,4 +199,3 @@ https://github.com/cw1997/NATBypass
 在目标机器上执行：nb -slave 127.0.0.1:3389 公网IP:51
 在公网的机器执行：nb -listen 51 3340
 在公网主机上连接 127.0.0.1:3340，即可连接上内网机器的3389端口。
-```
